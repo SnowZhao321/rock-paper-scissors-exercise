@@ -29,6 +29,32 @@ else:
 
 valid_options = ["rock", "paper", "scissors"]
 computer_choice = random.choice(valid_options)
-print("COMPUTER CHOICE: ", computer_choice)
+print("COMPUTER CHOICE:", computer_choice)
+
+
+
+# determine who won!
+#configure player name via environment variables 
+if user_choice == computer_choice:
+    print("It's a tie!")
+elif user_choice == "rock":
+    if (computer_choice == "paper"):
+        print("Computer wins!", computer_choice, "beats", user_choice)
+    elif (computer_choice == "scissors"):
+        print("You win!", user_choice, "beats", computer_choice)
+elif user_choice == "paper":
+    if (computer_choice == "scissors"):
+        print("Computer wins!", computer_choice, "beats", user_choice)
+    elif (computer_choice == "rock"):
+        print("You win!", user_choice, "beats", computer_choice)
+elif user_choice == "scissors":
+    if (computer_choice == "rock"):
+        print("Computer wins!", computer_choice, "beats", user_choice)
+    elif (computer_choice == "paper"):
+        print("You win!", user_choice, "beats", computer_choice)
+else:
+    print("Oops! There was an error. Please try again.")
+
+
 
 print("THIS IS THE END OF OUR GAME. PLEASE PLAY AGAIN.")
