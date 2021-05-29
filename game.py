@@ -1,13 +1,21 @@
 
 # game.py
 import random
-print("Rock, Paper, Scissors, Shoot!")
+
+import os 
+
+PLAYER_NAME = os.getenv("PLAYER_NAME")
+#print(PLAYER_NAME)
+
+print("--------------------------")
+print("Welcome " + PLAYER_NAME + " to my Rock-Paper-Scissors game")
+print("--------------------------")
 
 #print(10)
 
 #print(10, 99, "My message", "another message")
 
-user_choice = input("Please choose one of 'rock', 'paper', 'scissors': ")
+user_choice = input("Please choose either 'rock', 'paper', 'scissors': ")
 
 #print(user_choice)
 print("USER_CHOICE: ", user_choice)
@@ -54,4 +62,4 @@ else:
 
 #configure player name via environment variables 
 
-print("THIS IS THE END OF OUR GAME. PLEASE PLAY AGAIN.")
+print("Thanks for playing. THIS IS THE END OF OUR GAME. PLEASE PLAY AGAIN.")
