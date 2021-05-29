@@ -4,6 +4,11 @@ import random
 
 import os 
 
+import dotenv
+
+dotenv.load_dotenv()
+
+
 PLAYER_NAME = os.getenv("PLAYER_NAME")
 #print(PLAYER_NAME)
 
@@ -44,17 +49,17 @@ if user_choice == computer_choice:
     print("It's a tie!")
 elif user_choice == "rock":
     if (computer_choice == "paper"):
-        print("Computer wins!", computer_choice, "beats", user_choice)
+        print("oh, Computer wins! It's ok.", computer_choice, "beats", user_choice)
     elif (computer_choice == "scissors"):
         print("You win!", user_choice, "beats", computer_choice)
 elif user_choice == "paper":
     if (computer_choice == "scissors"):
-        print("Computer wins!", computer_choice, "beats", user_choice)
+        print("oh, Computer wins! It's ok.", computer_choice, "beats", user_choice)
     elif (computer_choice == "rock"):
         print("You win!", user_choice, "beats", computer_choice)
 elif user_choice == "scissors":
     if (computer_choice == "rock"):
-        print("Computer wins!", computer_choice, "beats", user_choice)
+        print("oh, Computer wins! It's ok.", computer_choice, "beats", user_choice)
     elif (computer_choice == "paper"):
         print("You win!", user_choice, "beats", computer_choice)
 else:
