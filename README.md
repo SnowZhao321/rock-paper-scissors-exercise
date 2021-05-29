@@ -13,6 +13,9 @@ Second, chenck the python version and module
   
   pip list 
   
-Third, from within the virtual environment, demonstrate your ability to run the Python script from the command-line:
+Third, install the required module by command "pip install -t requirments.txt", and set your username in the .env file by passing it to the variable PLAYER_NAME.
+
+Finally, from within the virtual environment, demonstrate your ability to run the Python script from the command-line:
   
   python game.py #(use the 'python' utility to run the Python file)
+
